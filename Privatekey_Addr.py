@@ -1,3 +1,5 @@
+#!/usr/bin/env
+
 from bit import Key
 from datetime import date
 
@@ -18,7 +20,7 @@ count = 0
 #grabing file content
 file = input('Enter file with .txt: \n')
 amount = int(input('No. of keys to convert: '))
-line_Starter = int(input('Enter line to beging from: '))
+line_Starter = int(input('Enter line to begging from: '))
 print('Converting...')
 
 # file = 'Results by Codejoe.txt'
@@ -32,9 +34,6 @@ with open (file, 'r', encoding='utf-8', errors='ignore') as reader:
                 # print(f'{private_key}:{addr}\n')
                 # balance = prv.get_balance('usd')
 
-                #Setting Range
-
-
                 count += 1
                 # writing files locally
                 with open ('Results by Codejoe.txt', 'a') as writer:
@@ -44,6 +43,6 @@ with open (file, 'r', encoding='utf-8', errors='ignore') as reader:
                     break
 
 with open ('Logs.txt', 'a') as logger:
-    logger.write(f'line checkpoint: {line_Starter} Date: {date.today()}\n')
+    logger.write(f'line checkpoint: {line_Starter} | Date: {date.today()}\n')
     logger.close()
     
