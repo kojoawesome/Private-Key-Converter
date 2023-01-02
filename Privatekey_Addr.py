@@ -25,7 +25,7 @@ current_time = time.strftime("%H:%M")
 #grabing file content
 file = input('Enter file with .txt: \n')
 amount = int(input('No. of keys to convert: '))
-line_Starter = int(input('Enter line to begging from: '))
+line_Starter = int(input('Enter line to begin from: '))
 print('Converting...')
 
 #getting line end
